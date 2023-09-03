@@ -1,0 +1,142 @@
+<!-- navbar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Blog</title>
+    <style>
+         .card{
+            height: 500px;
+            margin: 70px;
+            box-shadow:5px 5px 20px black;
+            overflow: hidden;
+           
+          
+        }
+        img{
+            height: 400px;
+            width: 350px;
+            border-radius: 3px;
+            transition: .5s;
+        }   
+        .intro{
+            height: 70px;
+            width: 350px;
+            padding: 5px;
+            box-sizing: border-box;
+            position: relative;
+           
+            background: rgb(27,27,27,.5);
+            color: white;
+            transition: .5s;
+        }
+        h1{
+            margin:10px;
+            font-size: 40px;
+        }
+        p{
+            font-size: 20px;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+        }
+        span{
+            font-weight: bold;
+        }
+        .card:hover{
+            cursor: pointer;
+        }
+        .card:hover .intro{
+            height: 220px;
+            bottom: 240px;
+            background: black;
+        }
+        .card:hover p{
+            opacity: 1;
+            visibility: visible;
+        }
+        .card:hover img{
+            transform: scale(1.1 )rotate(-3deg);
+        }
+        .grid-container{
+            
+           padding-left: 10px;
+            display: grid;
+           margin-top: 30px;
+             grid-template-columns: 450px 450px 450px;
+             padding-top : 10px;
+             justify-content: center;
+         }
+        
+    </style>
+</head>
+<body>
+    <div class = "container"> 
+    <header>
+        <div class="main">
+            <a href="#" class="logo">Travel Blog</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </div> 
+     </header>  
+        <div class="grid-container">
+            <div class="card">
+                <img src="tirupati1.jpeg" alt="Tirumala">
+                <div class="intro">
+                    <h1>Tirupati</h1>
+                    <p>Tirupati is a popular pilgrimage, known for its ancient temple dedicated to Lord Venkateswara and its vibrant spiritual atmosphere.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="goa1.jpeg" alt="goa">
+                <div class="intro">
+                    <h1>Goa</h1>
+                    <p>Wildlife safari at Bondla Wildlife Sanctuary, Visit the Museum of Goa, Visit the best beaches like Calangute Beach and Anjuna Beach</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="kerala1.jpeg" alt="kerala">
+                <div class="intro">
+                    <h1>kerala</h1>
+                    <p>Kerala, often referred to as "God's Own Country," is a captivating state known for its lush green landscapes, backwaters, pristine beaches, and rich cultural heritage.</p>
+                </div>
+            </div>
+        
+        
+       
+            <div class="card">
+                <img src="ooty1.jpeg" alt="ooty">
+                <div class="intro">
+                    <h1>Ooty</h1>
+                    <p>Ooty is a picturesque hill station known for its scenic beauty, <br>tea plantations, and pleasant climate. </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="manali1.jpeg" alt="manali">
+                <div class="intro">
+                    <h1>Manali</h1>
+                    <p>Trying adventure activities and Strolling on Mall Road</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="puri1.jpeg" alt="puri">
+                <div class="intro">
+                    <h1>Puri</h1>
+                    <p>Visit the temples and Spend some time at the Puri Beach</p>
+                    
+                </div>
+            </div> </div> 
+        
+        
+</body>
+</html>
+
+
